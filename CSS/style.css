@@ -1,0 +1,306 @@
+/* common css start */
+:root{
+      --heading_font: 'Abril Fatface', cursive;
+      --primary_font: 'Open Sans', sans-serif;
+      --secondary_font: 'Ubuntu', sans-serif;
+      --heading_color:#0f2f44;
+      --light_button:#ffffff;
+      --hover_button:#ffc712;
+      --secondary_color:#9ca0cf;
+      --hover:hover_effect;
+  }
+  *{
+      padding: 0;
+      margin: 0;
+      outline: 0;
+      box-sizing: border-box;
+  }
+  body{
+    font-family: var(--primary_font);
+    color: var(--heading_color);
+  }
+  .container{
+      width: 1170px;
+      margin: 0 auto;
+  }
+  .row{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  ul{
+      list-style-type: none;
+  }
+  a{
+      text-decoration: none;
+  }
+  .btn{
+      padding: 15px 20px;
+      font-size: 20px;
+      font-family: 24px;
+      background-color: var(--light_button);
+      color: var(--heading_color);
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      text-transform: capitalize;
+  }
+  .btn:hover{
+      background-color: var(--hover_button);
+  }
+  .w-50{
+      width: 50%;
+  }
+  .w-33{
+    width: calc(100% / 3);
+  }
+  .section_items h4,p{
+      font-size: 14px;
+      font-family: var(--primary_font);
+      font-weight: 300;
+  }
+  .section_items h2{
+      font-size: 32px;
+      font-family: 400;
+      font-family: var(--heading_font);
+      color: var(--heading_color);
+      text-transform: capitalize;
+  }
+  /* common css end */
+  /* topbar start */
+  #topbar {
+      background-color:var(--heading_color) ;
+  }
+  #topbar .row{
+      justify-content: space-between;
+      align-items: center;
+  }
+  #topbar p{
+      padding: 17px 0;
+      font-size: 16px;
+      line-height: 24px;
+      font-family: var(--secondary_font);
+      color:#e0e4e7 ;
+  }
+  /* topbar end */
+  /* nav section start */
+  nav{
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      background-color: var(--light_button);
+  }
+  nav .row{
+      justify-content: space-between;
+      align-items: center;
+  }
+  nav ul li a{
+      padding: 41px 19px;
+      font-size: 16px;
+      line-height: 24px;
+      font-family: var(--primary_font);
+      font-weight: 600;
+      text-transform: capitalize;
+      color: #222222;
+      display: inline-block;
+      transition: 0.5s;
+  
+  }
+  nav ul li a:hover{
+      background-color: #fff9e6;
+      color:var(--hover_button);
+      
+  }
+  nav li button{
+      width: 31px;
+      height: 31px;
+      border: none;
+      border-radius: 50%;
+      border: 1px solid #e0e0e0;
+      margin-right: 10px;
+      background: none;
+  }
+  nav li button:hover{
+    cursor: pointer;
+  }
+  /* nav section end */
+  /* bannar section start */
+  #bannar{
+      background-image:url(./../images/Bizzency.jpg);
+      background-position: center;
+      background-size: cover;
+      height: 600px;
+  }
+  #bannar .row{
+      height: 100%;
+      align-items: center;
+  }
+  #bannar .inner_container{
+      width: 40%;
+  }
+  #bannar h3,h1{
+      line-height: 70px;
+      color:var(--heading_color) ;
+  
+  }
+  #bannar h3{
+      text-transform: capitalize;
+      font-size: 50px;
+      font-family: var(--secondary_font);
+      font-weight: 300;
+  }
+  #bannar h1{
+      text-transform: uppercase;
+      font-size: 80px;
+      font-family: var(--heading_font);font-weight: 400;
+      
+  }
+  #bannar h4{
+      font-size: 32px;
+      line-height: 24px;
+      font-family: var(--secondary_font);
+      font-weight: 400;
+      letter-spacing: 17px;
+      color:var(--secondary_color) ;
+      text-transform: capitalize;
+      padding-top: 22px;
+  }
+  #bannar p{
+      font-size: 14px;
+      line-height: 24px;
+      padding: 34px 0;
+      font-family: var(--primary_font);
+  }
+  #bannar .btn{
+    background-color: var(--secondary_color);
+    transition: 0.5s;
+  }
+  #bannar .btn:hover{
+    background-color: var(--light_button);
+  }
+  #bannar .playbtn{
+      height: 50px;
+      width: 50px;
+      border: none;
+      border-radius: 50%;
+      background-color: var(--light_button);
+      color: var(--secondary_color);
+      font-size: 20px;
+      margin-left: 20px;
+      box-shadow: 0 2px 5px 5px var(--secondary_color);
+  }
+  /* bannar section end */
+  /* about section start */
+  #about .container{
+      padding: 99px 0;
+  }
+  #about ul{
+      padding-left: 30px;
+  }
+  #about ul li{
+      font-size: 16px;
+      line-height: 44px;
+  }
+  #about .btn{
+      margin: 33px 10px;
+      display: inline-block;
+  }
+  /* skill section start */
+  #skill img{
+      width: 100%;
+  }
+  #skill{
+    padding-bottom: 98px;
+  }
+#skill .section_items{
+      text-align: right;
+  }
+#skill .p_bar_label .row{
+    justify-content: space-between;
+
+}
+#skill .p_bar_label{
+    width: 90%;
+    padding: 15px 0;
+}
+#skill .p_bar{
+    padding-left: 64px;
+    padding-top: 48px;
+}
+#skill progress{
+    direction: rtl;
+    width: 100%;
+}
+#skill .p_bar .row{
+    justify-content: space-between;
+}
+#skill .ps_bar #pb_1{
+    accent-color:#2a4896
+}
+#skill .ps_bar #pb_2{
+    accent-color:#5d3b15
+}
+#skill .ps_bar #pb_3{
+    accent-color:#344a1f
+}
+#skill .ps_bar #pb_4{
+    accent-color:#392960
+}
+/* skill section end */
+/* service section start */
+#service{
+    background-color: #f5f5f5;
+    
+}
+#service .container{
+    padding-bottom: 34px;
+}
+#service .section_items{
+    text-align: center;
+    padding: 55px 0;
+}
+#service .service_box{
+    align-items: center;
+    position: relative;
+    
+    
+}
+#service .service_box .service_icon{
+    width: 100px;
+}
+#service .service_box .service_info{
+    width: calc(100% - 100px);
+}
+#service .service_info p{
+    padding-top: 27px;
+    font-size: 14px;
+    line-height: 24px;
+}
+#service .row .service_box{
+    background-color: #efefef;
+    margin:15px;
+    border-radius: 5px;
+    width: 30%;
+    padding: 10px 8px;
+  
+}
+#service .service_box .hover_effect{
+    background-color: var(--heading_color);
+    text-align: center;
+    color: var(--light_button);
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    position:absolute;
+    overflow: hidden;
+    display: none;
+ 
+}
+#service .service_box:hover .hover_effect{
+    display: block;
+}
+#service .hover_element{
+    padding: 20px 0;
+}
+/* service section end */
